@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1704470185 source:c:\users\img_acer\documents\ejercicios codeblocks\bibliotecas\libreria.c
+
+1704470459 source:c:\users\img_acer\documents\ejercicios codeblocks\bibliotecas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"libreria.h"
+
+1704469944 c:\users\img_acer\documents\ejercicios codeblocks\bibliotecas\libreria.h
+
