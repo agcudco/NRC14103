@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1705334714 source:d:\repo-espe\fundamentos_programacion\parcial2\soluciontallergrupal\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arreglos.h"
+
+1705333899 source:d:\repo-espe\fundamentos_programacion\parcial2\soluciontallergrupal\arreglos.c
+
+1705333966 d:\repo-espe\fundamentos_programacion\parcial2\soluciontallergrupal\arreglos.h
+
