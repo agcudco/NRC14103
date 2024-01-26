@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1705938042 source:c:\users\img_acer\documents\ejercicios codeblocks\matrices\matriz003\matrices.c
+
+1705938805 source:c:\users\img_acer\documents\ejercicios codeblocks\matrices\matriz003\main.c
+	<stdio.h>
+	<stdlib.h>
+	"matrices.h"
+
+1705937039 c:\users\img_acer\documents\ejercicios codeblocks\matrices\matriz003\matrices.h
+
