@@ -7,19 +7,26 @@ void llenarMatriz(int n, float mat[n][n]);
 void imprimirMatriz(int n, float mat[n][n]);
 void sumatoriaFilas(int n, float mat[n][n]);
 void generarVector(int n,int vector[n]);
-void generarMatrizvector();
+void imprimeVector(int n,int vector[]);
+void generarMatrizVector(int n, int vector[]);
 
 
 int main()
 {
-    int n,b;
+    int n,b,n1;
 
     n=leerDimensionMatriz();
     float mat[n][n];
     llenarMatriz(n,mat);
-    imprimirMatriz(n,mat);
-    printf("\nSolucion\n");
+    //imprimirMatriz(n,mat);
+    //printf("\nSolucion\n");
     sumatoriaFilas(n,mat);
+    printf("\nSolucion Vector\n");
+    n1=leerDimensionMatriz();
+    int vect[n1];
+    generarVector(n1,vect);
+    imprimeVector(n1,vect);
+    generarMatrizVector(n1,vect);
     return 0;
 }
 
@@ -95,7 +102,47 @@ void sumatoriaFilas(int n, float mat[n][n])
 void generarVector(int n,int vector[n])
 {
     for(int i=0;i<n;i++){
-        vector[i]=
+        vector[i]=(rand()%21);
+    }
+}
+
+void imprimeVector(int n,int vector[])
+{
+    printf("\nElemento del vector: \n");
+    for(int i=0;i<n;i++){
+        printf("%d\t",vector[i]);
+    }
+}
+
+void generarMatrizVector(int n, int vector[])
+{
+    int i,j,dim,c=0;
+    dim =(int)sqrt(n);
+    if((dim*dim)!=n){
+        dim+=1;
+    }
+
+    int mat[dim][dim];
+
+    for(i=0;i<dim;i++){
+        for(j=0;j<dim;j++){
+            if(c<n){
+                mat[i][j]=vector[c];
+            }
+            else{
+                mat[i][j]=0;
+            }
+            c+=1;
+        }
+    }
+
+    printf("\nMatriz Generada\n");
+    for(i=0;i<dim;i++){
+        printf("\n");
+        for(j=0;j<dim;j++){
+           printf("%d\t",mat[i][j]);
+        }
+        printf("\n");
     }
 }
 
